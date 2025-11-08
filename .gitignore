@@ -1,0 +1,107 @@
+# -----------------------------
+# Python / FastAPI Project
+# -----------------------------
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Virtual environments
+venv/
+env/
+.venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Distribution / packaging
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# Jupyter notebooks
+.ipynb_checkpoints
+
+# Alembic migration cache
+alembic/__pycache__/
+alembic/*.pyc
+alembic/versions/__pycache__/
+alembic/versions/*.pyc
+
+# Database files (if using SQLite locally)
+*.db
+*.sqlite3
+
+# Logs and temp files
+*.log
+*.out
+*.err
+logs/
+tmp/
+temp/
+*.pid
+
+# IDEs and editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Environment variables / local configs
+.env
+.env.*
+*.env
+
+# mypy / type checker
+.mypy_cache/
+.dmypy.json
+.pyre/
+.pytype/
+
+# FastAPI specific cache / local data
+*.pid
+__pypackages__/
+
+# Coverage reports
+htmlcov/
+.coverage
+
+# Local startup scripts (optional)
+run-startup-script
