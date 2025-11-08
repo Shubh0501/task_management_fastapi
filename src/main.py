@@ -13,7 +13,7 @@ app = FastAPI(**app_configs)
 async def healthcheck() -> dict[str, str]:
     return {
         "status": "ok",
-        "message": "Atlys Task Management application is up and running!",
+        "message": "Task Management application is up and running!",
     }
 
 @app.get("/run-startup-script")

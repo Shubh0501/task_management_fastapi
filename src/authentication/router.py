@@ -7,7 +7,7 @@ from src.utils.hash_service import hash_password, verify_password
 from src.utils.token_service import create_access_token, create_refresh_token, decode_refresh_token
 from .structure import UserCreate, UserRead, LoginRequest, TokenResponse, RefreshRequest
 
-router = APIRouter()
+router = APIRouter(tags=["Authentication"])
 
 @router.post("/register", response_model=UserRead, status_code=status.HTTP_201_CREATED)
 async def register_user(user: UserCreate, session: Session = Depends(get_db_session)):

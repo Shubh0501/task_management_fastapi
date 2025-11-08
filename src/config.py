@@ -7,13 +7,13 @@ from src.constants import Environment
 
 class Config(BaseSettings):
     DB_URL: str = (
-        "postgresql://electrifi:electrifi123@127.0.0.1:5432/atlys_project"
+        "postgresql://shubham:shubham@127.0.0.1:5432/pmt"
     )
     DB_ASYNC_URL: str = (
-        "postgresql+asyncpg://electrifi:electrifi123@127.0.0.1:5432/atlys_project"
+        "postgresql+asyncpg://shubham:shubham@127.0.0.1:5432/pmt"
     )
-    DB_NAME: str = "atlys_project"
-    JWT_SECRET_KEY: str = "JWT$ecrETKeYValuePAIR#099100215063"
+    DB_NAME: str = "pmt"
+    JWT_SECRET_KEY: str = "BIGSECRETCODE"
     JWT_ALGORITHM: str = "HS256"
     AUTH_API_PREFIX: str = "/auth"
     TASK_API_PREFIX: str = "/task"
@@ -38,6 +38,6 @@ class Config(BaseSettings):
         return level
 
 
-app_configs: dict[str, Any] = {"title": "Atlys Project Management App"}
+app_configs: dict[str, Any] = {"title": "Project Management App"}
 
 settings = Config()
