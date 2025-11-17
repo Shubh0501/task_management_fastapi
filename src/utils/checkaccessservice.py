@@ -6,7 +6,6 @@ def check_access(access_needed: str):
         @wraps(func)
         async def wrapper(*args, **kwargs):
             request = kwargs.get("request")
-            print(request, kwargs)
             if not request:
                 raise HTTPException(status_code=400, detail="Request object is missing")
             roles = request.get("roles")

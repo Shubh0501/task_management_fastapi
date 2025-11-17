@@ -19,7 +19,6 @@ async def healthcheck() -> dict[str, str]:
 @app.get("/run-startup-script")
 async def run_startup_script(session: Session = Depends(get_db_session)) -> dict[str, str]:
     roles = RoleList._member_names_
-    print(roles)
     for key in roles:
         role = Role(
             name= key,

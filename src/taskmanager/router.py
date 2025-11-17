@@ -128,7 +128,7 @@ async def delete_task(
             detail="Cannot delete task with existing subtasks. Please delete them first."
         )
 
-    # Step 4: Clean up dependencies & assignee links
+    # Cleaning up dependencies & assignee links
     await session.execute(
         delete(TaskDependency).where(
             (TaskDependency.task_id == task.id)
@@ -139,7 +139,6 @@ async def delete_task(
         delete(TaskAssignee).where(TaskAssignee.task_id == task.id)
     )
 
-    # Step 5: Delete the task
     await session.delete(task)
     await session.commit()
 
